@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <title>Contact</title>
+        <title>Signup</title>
         <link rel="stylesheet" type="text/css" href="final_style.css">
-        <link rel="stylesheet" type="text/css" href="contact_style.css">
+        <link rel="stylesheet" type="text/css" href="login_style.css">
     </head>
     <body>
         <div class="bg_div">
@@ -64,26 +64,47 @@
 
 
 
-        <div id="map_contain">
-            <div id="map">
+
+
+
+
+        <div id="login_contain">
+            <div id="login">
                 <br>
-                <h1>찾아오시는 길</h1>
+                <h2>Travel Postcard 회원가입</h2>
                 <div class="line3px"></div>
-                <!-- <div id="daumRoughmapContainer1593765261884" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                <form name="form" method="get">
+                    <div>
+                        <input id="email" type="text" placeholder="이메일" autocomplete="off" autofocus="">
+                    </div>
+                    <div>
+                        <input name="pw1" class="pw" type="password" placeholder="비밀번호" autocomplete="off">
+                    </div>
+                    <div>
+                        <input name="pw2" class="pw" type="password" placeholder="비밀번호 재확인" autocomplete="off">
+                    </div>
+                    <div>
+                        <button id="signup_btn2" onclick="checkSignup();">회원가입</button>
+                    </div>
+                </form><br>
+                <div class="line3px"></div><br>
+                <a href="" onclick="alert('준비중입니다.');">
+                    <del>아이디 찾기</del>
+                </a>&nbsp&nbsp | &nbsp&nbsp
+                <a href="" onclick="alert('준비중입니다.');">
+                    <del>비밀번호 찾기</del>
+                </a>&nbsp&nbsp | &nbsp&nbsp
+                <a href="" onclick="alert('준비중입니다.');">
+                    <del>회원가입</del>
+                </a>
                 
-                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-                
-                <script charset="UTF-8">
-                    new daum.roughmap.Lander({
-                        "timestamp" : "1593765261884",
-                        "key" : "2z3bq",
-                        "mapWidth" : "1000",
-                        "mapHeight" : "500"
-                    }).render();
-                </script> -->
             </div>
         </div>
     
+
+
+
+
 
     
         <div id="bottom_info">
@@ -116,5 +137,6 @@
                 </li>
             </ul>
         </div>
+        <script type="text/javascript" src="signup_check.js"></script>
 </body>
 </html>

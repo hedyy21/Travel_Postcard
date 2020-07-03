@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-        <title>login</title>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="final_style.css">
         <link rel="stylesheet" type="text/css" href="login_style.css">
     </head>
     <body>
+        <div class="bg_div">
+            <img class="bg_img" src="final_img/bg_photo.jpg">
+        </div>
+
 	    <div class="logobox">
 		    <ul>
                 <li class="banner_side">
@@ -19,52 +24,119 @@
                 </li>
 				<li class="banner_side">
 					<div id="membership">
-                        <a href="" id="login_btn">로그인하기</a>
-                        <a href="" id="signup_btn">가입하기</a>
+                        <a href="login.html" id="login_btn">로그인하기</a>
+                        <a href="signup.html" id="signup_btn">가입하기</a>
+                        <span id="insta_btn_top">
+                            <a href="https://www.instagram.com/hedyy.___.ho/">
+                                <img src="final_img/insta_img.png">
+                            </a>
+                        </span>
                     </div>
                 </li>
             </ul>
         </div>
-            
-        <div>
-            <div class="form-signin mg-btm">
-            <h3 class="heading-desc wh">크라우드픽 로그인</h3>
-            <div class="social-box">
-                <div class="row">
-                <div class="col-md-12">
-                    <a onclick="location.replace(&#39;/controller/account/n_login_callback.php?st=l&amp;sec=1&#39;); return false;" class="btn btn-naver btn-block">
-                      Naver
-                    </a>
-                </div>
-              </div>
-            </div>
-            <div class="division-line">
-                <div></div>
-            </div>
-            <div class="main">
-            
-            <input id="login-email" type="text" name="email" class="form-control" placeholder="이메일" autocomplete="off" autofocus="">
-            <input id="login-pw" type="password" name="password" class="form-control" placeholder="비밀번호" autocomplete="off">
-            <button id="login-btn" class="transparent-btn btn login-btn wh" onclick="checkLogin()">로그인</button>
-            <div class="checkbox"><label style="float:right;"><input type="checkbox" id="auto_login" name="auto_login" value="1">로그인 상태 유지</label></div>
-            <span class="clearfix"></span>	
-            </div>
-            <div class="division-line">
-                <div></div>	
-            </div>
-            <div class="login-footer">
-                <div class="row">
-                    <div>
-                        <div class="left-section">
-                            <a href="https://www.crowdpic.net/view/account/register.php?flag=1" onclick="statisticsAnonymous(&#39;register&#39;, &#39;downloader&#39;);">계정이 없다면? (무료로 회원가입)</a>
-                        </div>
-                        <div class="left-section">
-                            <a href="https://www.crowdpic.net/view/account/find_password.php">비밀번호 찾기</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
+        <div id="navi">
+            <ul class="navi_container">
+                <li>
+                    <a href="final.html">Home</a>
+                </li>
+                <li>
+                    <a href="product1.html" onclick="alert('임시 페이지 product1로 이동합니다.');">Shop</a>
+                    <ul class="drop">
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>엽서</del></a></li>
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>편지지</del></a></li>
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>스티커</del></a></li>
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>달력</del></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="" onclick="alert('준비중입니다.');"><del>About</del></a>
+                    <ul class="drop">
+                        <li><a href=""><del>About Us</del></a></li>
+                        <li><a href=""><del>Product info</del></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-    </body>
+
+
+
+
+
+
+
+        <div id="login_contain">
+            <div id="login">
+                <br>
+                <h2>Travel Postcard 로그인</h2>
+                <div class="line3px"></div>
+                
+                <div>
+                    <input id="email" type="text" placeholder="이메일" autocomplete="off" autofocus="">
+                </div>
+                <div>
+                    <input id="pw" class="pw" type="password" placeholder="비밀번호" autocomplete="off">
+                </div>
+                <div>
+                    <button id="login_btn2"onclick="alert('준비중입니다.');">로그인</button>
+                </div>
+                <div id="checkbox">
+                    <label>
+                        <input type="checkbox" id="auto_login" name="auto_login" value="1">로그인 상태 유지
+                    </label>
+                </div><br>
+                <div class="line3px"></div><br><br>
+                <a href="" onclick="alert('준비중입니다.');">
+                    <del>아이디 찾기</del>
+                </a>&nbsp&nbsp | &nbsp&nbsp
+                <a href="" onclick="alert('준비중입니다.');">
+                    <del>비밀번호 찾기</del>
+                </a>&nbsp&nbsp | &nbsp&nbsp
+                <a href="" onclick="alert('준비중입니다.');">
+                    <del>회원가입</del>
+                </a>
+                
+            </div>
+        </div>
+    
+
+
+
+
+
+    
+        <div id="bottom_info">
+            <ul>
+                <li id="info">
+                    <p><b>Travel Postcard</b></p>
+                    <p>
+                        Sname : 배성호<br>
+                        Sno : 20161590<br>
+                    </p>
+                    <p>
+                        TEL : 15XX-1234<br>
+                        FAX : 02-XXXX-1234
+                    </p>
+                    <p>
+                        XXXXXXX@travelpostcard.co.kr
+                    </p>
+                </li>
+                <li id="box"></li>
+                <li id="insta">
+                    <p>
+                        <a href="https://www.instagram.com/hedyy.___.ho/">
+                            <b>엽서 제작에 사용된</b><br>
+                            <b>더 많은 사진 보러 가기!!😉👍</b><br>
+                            <h2>
+                                <span id="insta_btn_bottom"><img src="final_img/insta_img.png"></span>
+                                 hedyy.___.ho</h2>
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+</body>
 </html>

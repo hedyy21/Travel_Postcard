@@ -1,72 +1,58 @@
-*{
-    list-style: none;
-    font-family: SCDream3;
+input {
+    border-style: none;
 }
-a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+button {
+    border-style: none;
 }
-@font-face {
-    font-family: 'SCDream3';
-    src: url(font/SCDream3.otf) format('truetype');
-}
-body{
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    background-color:rgb(250, 250, 250);
-}
-
-.logobox ul {
-    display: flex;
-    background-color: white;
-    padding: 20px 40px;
-    margin: 0;
-}
-.banner_side {
-    width: 25%;
-}
-.banner_center {
-    width: 50%;
-
-    position: relative;
-    padding-top: 150px;
-}
-.banner_center div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translate(50%,50%);
-}
-.banner_center img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: auto;
-    transform: translate(-50%,-50%);
-}
-#membership {
-    display: block;
-    padding: 32px 60px 0 0;
-    text-align: right;
-}
-#login_btn {
-    color: rgb(0, 0, 0);
-}
-#signup_btn {
-    display: inline-block;
-    margin-left: 22px;
-    min-width: 120px;
-    border-radius: 20px;
-    border: 1px solid #e0e0e0;
-    font-size: 13px;
-    color: rgb(0, 0, 0);
-    line-height: 38px;
-    box-sizing: border-box;
+#login_contain {
+    background-color: rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    height: 700px;
+    padding-top: 45px;
 }
-
+#login {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    display: block;
+}
+.line3px {
+    border:1px solid rgb(0, 0, 0);
+}
+#email {
+    width: 250px;
+    height: 30px;
+    margin: 30px 0 10px 0;
+    border-radius: 5px;
+}
+.pw {
+    width: 250px;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+#login_btn2 {
+    width: 250px;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(75, 75, 75, 0.75);
+    color: white;
+}
+#checkbox {
+    width: 200px;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+#signup_btn2 {
+    width: 250px;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgba(75, 75, 75, 0.75);
+    color: white;
+}
