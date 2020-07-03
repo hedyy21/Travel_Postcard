@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>런던 London (A)</title>
+        <link rel="stylesheet" type="text/css" href="final_style.css">
+        <link rel="stylesheet" type="text/css" href="product_style.css">
+    </head>
+    <body>
+        <div class="bg_div">
+            <img class="bg_img" src="final_img/bg_photo.jpg">
+        </div>
+
+	    <div class="logobox">
+		    <ul>
+                <li class="banner_side">
+				    <div></div>
+			    </li>
+			    <li class="banner_center">
+                    <div>
+					    <p>
+                            <a href="final.html" ><img src="final_img/logo.jpg"></a>
+                        </p>
+                    </div>
+                </li>
+				<li class="banner_side">
+					<div id="membership">
+                        <a href="" id="login_btn">로그인하기</a>
+                        <a href="" id="signup_btn" onclick="alert('준비중입니다.');">
+                            <del>가입하기</del>
+                        </a>
+                        <span id="insta_btn_top">
+                            <a href="https://www.instagram.com/hedyy.___.ho/">
+                                <img src="final_img/insta_img.png">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="navi">
+            <ul class="navi_container">
+                <li>
+                    <a href="final.html">Home</a>
+                </li>
+                <li>
+                    <a href="" onclick="alert('준비중입니다.');"><del>Shop</del></a>
+                    <ul class="drop">
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>엽서</del></a></li>
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>편지지</del></a></li>
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>스티커</del></a></li>
+                        <li><a href="" onclick="alert('준비중입니다.');"><del>달력</del></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">About</a>
+                    <ul class="drop">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Product info</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="white_bg">
+            <div id="product">
+                <ul>
+                    <li id="product_img">
+                        <img class="pre_img" src="final_img/111_detail.png">
+                        <img class="hover_img" src="final_img/11.jpg">
+                    </li>
+                    <li id="product_info">
+                        <br><p style="font-size:22px;">런던에서 데려온 엽서 (10pc)</p>
+                        <p style="font-size:19px;">7,900원</p>
+                        <br>
+                        <div class="line1px"></div>
+                        <br>
+                        <table>
+                            <tr>
+                                <th>제조사</th>
+                                <td>Sungho Corp.</td>
+                            </tr>
+                            <tr>
+                                <th>원산지</th>
+                                <td>한국</td>
+                            </tr>
+                        </table>
+                        <br><br>
+                        <table>
+                            <tr>
+                                <th>배송비</th>
+                                <td>3,000원 (20,000원 이상 무료배송)</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>배송은 매주 월요일, 목요일 발송</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <hr>
+                        <br>
+                        <table id="quantity_table">
+                            <form name="form" method="get">
+                                <tr>
+                                    <th>
+                                        수량
+                                    </th>
+                                    <td>
+                                        <input type=hidden name="price" value="7900">
+                                        <input type="text" name="amount" value="1" size="7" onchange="change();" onkeypress="inNumber();">
+                                        <input type="button" value=" + " onclick="add();">
+                                        <input type="button" value=" - " onclick="del();">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        총 금액
+                                    </th>
+                                    <td>
+                                        <input type="text" name="sum" value="7900" size="15" readonly> 원
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <span id="order" onclick="alert('준비중입니다.');">
+                                            <a href="">주문하기</a>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </form>
+                        </table>
+                        <br>
+                        <div class="line1px"></div>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="empty80"></div>
+            <br>
+            <div class="line3px"></div>
+            <p class="sub_title">
+                <span>DETAILS</span>
+            </p>
+            <div class="line3px"></div>
+            <br>
+            <div class="empty80"></div>
+    
+            <div class="detail_div">
+                <div>
+                    <h1>Travel Postcard &nbsp&nbsp | &nbsp&nbsp 런던 London (A)</h1>
+                    <h2>국내에서 친환경 종이로 제작된 엽서!!</h2><br>
+                    <h3> - 1세트에 10개입, 확인하시고 구매 부탁드립니다 - </h3>
+                    <h3> - 가로 165 x 세로 93 (mm) - </h3>
+                </div>
+                <img class="detail_img" src="final_img/postcard_back.png">
+                <img class="detail_img2" src="final_img/1.jpg">
+                <img class="detail_img" src="final_img/111_detail.png">
+                <div class="empty100"></div>
+            </div>
+            
+        </div>
+
+        <div class="detail_div2">
+            <br><br><br><br><br><br><br>
+            <h1>Travel Postcard Project &nbsp&nbsp | &nbsp&nbsp 20161590 배성호</h1><br>
+
+            <h2>그동안 여행을 하며 찍어왔던 사진들을 이용해 언젠가는 엽서 판매를 해보겠다는 마음!!</h2>
+            <h3>이번 기회를 통해 실제 엽서 판매에 대해 알아보고, 시제품들을 조사했습니다!</h3>
+            <h3>직접 도안도 디자인해보고, 사이트 제작도 해보니</h3>
+            <h3>판매에 한 걸음 가까워진 듯합니다</h3>
+        </div>
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+        <div id="bottom_info">
+            <ul>
+                <li id="info">
+                    <p><b>Travel Postcard</b></p>
+                    <p>
+                        Sname : 배성호<br>
+                        Sno : 20161590<br>
+                    </p>
+                    <p>
+                        TEL : 15XX-1234<br>
+                        FAX : 02-XXXX-1234
+                    </p>
+                    <p>
+                        XXXXXXX@travelpostcard.co.kr
+                    </p>
+                </li>
+                <li id="box"></li>
+                <li id="insta">
+                    <p>
+                        <a href="https://www.instagram.com/hedyy.___.ho/">
+                            <b>엽서 제작에 사용된</b><br>
+                            <b>더 많은 사진 보러 가기!!😉👍</b><br>
+                            <h2>
+                                <span id="insta_btn_bottom"><img src="final_img/insta_img.png"></span>
+                                 hedyy.___.ho</h2>
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <script type="text/javascript" src="product_count.js"></script>
+    </body>
+</html>
