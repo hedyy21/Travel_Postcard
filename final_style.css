@@ -285,10 +285,10 @@ body{
 }
 
 #bottom_info {
-    
-    background:rgb(65, 65, 65);
+    background:rgba(65, 65, 65, 0.5);
     color: white;
     height:350px;
+    margin-top: -13px;
 }
 #bottom_info ul {
     display: flex;

@@ -92,13 +92,3 @@
     margin-bottom: 15px;
     box-shadow: 10px 10px 10px gray;
 }
-
-#bottom_info2 {
-    background:rgba(65, 65, 65, 0.5);
-    color: white;
-    height:350px;
-}
-#bottom_info2 ul {
-    display: flex;
-    padding-top: 40px;
-}
