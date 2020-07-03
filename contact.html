@@ -1,29 +1,125 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <title>Contact Us</title>
-</head>
-<body>
-<!-- * 카카오맵 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1593765261884" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="final_style.css">
+        <link rel="stylesheet" type="text/css" href="contact_style.css">
+    </head>
+    <body>
+        <div class="bg_div">
+            <img class="bg_img" src="final_img/bg_photo.jpg">
+        </div>
 
-<!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1593765261884",
-		"key" : "2z3bq",
-		"mapWidth" : "1000",
-		"mapHeight" : "500"
-	}).render();
-</script>
+
+	    <div class="logobox">
+		    <ul>
+                <li class="banner_side">
+				    <div></div>
+			    </li>
+			    <li class="banner_center">
+                    <div>
+					    <p>
+                            <a href="final.html" ><img src="final_img/logo.jpg"></a>
+                        </p>
+                    </div>
+                </li>
+				<li class="banner_side">
+					<div id="membership">
+                        <a href="" id="login_btn">로그인하기</a>
+                        <a href="" id="signup_btn">가입하기</a>
+                        <span id="insta_btn_top">
+                            <a href="https://www.instagram.com/hedyy.___.ho/">
+                                <img src="final_img/insta_img.png">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+            
+
+        <div id="navi">
+            <ul class="navi_container">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Shop</a>
+                    <ul class="drop">
+                        <li><a href=""><del>엽서</del></a></li>
+                        <li><a href=""><del>편지지</del></a></li>
+                        <li><a href=""><del>스티커</del></a></li>
+                        <li><a href=""><del>달력</del></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">About</a>
+                    <ul class="drop">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Product info</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div id="map_contain">
+            <div id="map">
+                <br>
+                <h1>찾아오시는 길</h1>
+                <div class="line3px"></div>
+                <div id="daumRoughmapContainer1593765261884" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1593765261884",
+                        "key" : "2z3bq",
+                        "mapWidth" : "1000",
+                        "mapHeight" : "500"
+                    }).render();
+                </script>
+            </div>
+        </div>
     
+
+    
+    <div id="bottom_info">
+        <ul>
+            <li id="info">
+                <p><b>Travel Postcard</b></p>
+                <p>
+                    Sname : 배성호<br>
+                    Sno : 20161590<br>
+                </p>
+                <p>
+                    TEL : 15XX-1234<br>
+                    FAX : 02-XXXX-1234
+                </p>
+                <p>
+                    XXXXXXX@travelpostcard.co.kr
+                </p>
+            </li>
+            <li id="box"></li>
+            <li id="insta">
+                <p>
+                    <a href="https://www.instagram.com/hedyy.___.ho/">
+                        <b>엽서 제작에 사용된</b><br>
+                        <b>더 많은 사진 보러 가기!!😉👍</b><br>
+                        <h2>
+                            <span id="insta_btn_bottom"><img src="final_img/insta_img.png"></span>
+                             hedyy.___.ho</h2>
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
 
