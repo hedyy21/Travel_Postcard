@@ -1,9 +1,8 @@
 #map_contain {
     background-color: rgba(255, 255, 255, 0.7);
-    height: 600px;
+    height: 700px;
 }
 #map {
-    background-color: rgb(122, 122, 122, 0.5);
     width: 1000px;
     height: 500px;
     margin: auto;
