@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" type="text/css" href="login_style.css">
+    </head>
+    <body>
+	    <div class="logobox">
+		    <ul>
+                <li class="banner_side">
+				    <div></div>
+			    </li>
+			    <li class="banner_center">
+                    <div>
+					    <p>
+                            <a href="final.html" ><img src="final_img/logo.jpg"></a>
+                        </p>
+                    </div>
+                </li>
+				<li class="banner_side">
+					<div id="membership">
+                        <a href="" id="login_btn">로그인하기</a>
+                        <a href="" id="signup_btn">가입하기</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+            
+        <div>
+            <div class="form-signin mg-btm">
+            <h3 class="heading-desc wh">크라우드픽 로그인</h3>
+            <div class="social-box">
+                <div class="row">
+                <div class="col-md-12">
+                    <a onclick="location.replace(&#39;/controller/account/n_login_callback.php?st=l&amp;sec=1&#39;); return false;" class="btn btn-naver btn-block">
+                      Naver
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="division-line">
+                <div></div>
+            </div>
+            <div class="main">
+            
+            <input id="login-email" type="text" name="email" class="form-control" placeholder="이메일" autocomplete="off" autofocus="">
+            <input id="login-pw" type="password" name="password" class="form-control" placeholder="비밀번호" autocomplete="off">
+            <button id="login-btn" class="transparent-btn btn login-btn wh" onclick="checkLogin()">로그인</button>
+            <div class="checkbox"><label style="float:right;"><input type="checkbox" id="auto_login" name="auto_login" value="1">로그인 상태 유지</label></div>
+            <span class="clearfix"></span>	
+            </div>
+            <div class="division-line">
+                <div></div>	
+            </div>
+            <div class="login-footer">
+                <div class="row">
+                    <div>
+                        <div class="left-section">
+                            <a href="https://www.crowdpic.net/view/account/register.php?flag=1" onclick="statisticsAnonymous(&#39;register&#39;, &#39;downloader&#39;);">계정이 없다면? (무료로 회원가입)</a>
+                        </div>
+                        <div class="left-section">
+                            <a href="https://www.crowdpic.net/view/account/find_password.php">비밀번호 찾기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
